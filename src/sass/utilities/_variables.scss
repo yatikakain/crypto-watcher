@@ -1,0 +1,67 @@
+:root {
+  --font-inter: 'Inter';
+}
+
+$linear: #2870EA;
+$blue: #0052FE;
+$blue-100: #E8F4FD;
+$black: #0F1629;
+$black-100: #151819;
+$black-200: #191C1F;
+$dark: #475153;
+$white: #ffffff;
+$white-100: #F2F2F2;
+$gray: #44475B;
+$gray-100: #3E424A;
+$green: #EBF9F4;
+$green-50: #14B079;
+$green-100: #0FBA83;
+$primary: #0b6b5a;
+$orange: #eb7b1a;
+$orange-600: #9d5211;
+$error: #ef4444;
+$error-50: #fef6f6;
+$purple: #cc3dc1;
+$orange-100: #eb7b1a1a;
+$max-width: 1440px;
+
+html {
+  --linear: #2870EA;
+  --blue: #0052FE;
+  --blue-100: #E8F4FD;
+  --black: #0F1629;
+  --black-100: #151819;
+  --black-200: #191C1F;
+  --dark: #475153;
+  --white: #ffffff;
+  --white-100: #F2F2F2;
+  --white-200: #fafafa;
+  --gray: #44475B;
+  --gray-100: #3E424A;
+  --green: #EBF9F4;
+  --green-50: #14B079;
+  --green-100: #0FBA83;
+  --primary: #0b6b5a;
+  --orange: #eb7b1a;
+  --orange-600: #9d5211;
+  --orange-100: #eb7b1a1a;
+  --orange-200: #fdf4ec;
+  --orange-300: #fbe5d1;
+  --purple: #cc3dc1;
+  --orange-100: #eb7b1a1a;
+  --error-50: #fef6f6;
+  --error: #ef4444;
+  --max-width: 1440px;
+}
+
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  scroll-behavior: smooth;
+}
