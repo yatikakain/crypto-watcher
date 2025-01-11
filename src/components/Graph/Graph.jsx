@@ -25,7 +25,7 @@ export const Graph = () => {
               {coinId}
             </p>
             <p className="font-medium text-base leading-[19.2px] text-[#5D667B]">
-              Btc
+            {coinId? coinId.slice(0,3):"btc"}
             </p>
           </div>
         </div>
