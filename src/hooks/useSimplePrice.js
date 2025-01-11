@@ -19,6 +19,5 @@ export function useSimplePrice() {
         `${ENV_VARS.baseURL}/simple/price?ids=${coinId}&vs_currencies=inr%2Cusd&include_24hr_change=true`,
       ),
   });
-
-  return { simplePrice: data?.data?.bitcoin, isPending };
+  return { simplePrice: data?.data?.[coinId], isPending };
 }
