@@ -33,10 +33,18 @@ export const Carousel = () => {
         </button>
       )}
 
-      <div className="flex overflow-x-auto">
+      <div className="flex overflow-x-auto"
+        style={{
+          msOverflowStyle: 'none', // For Internet Explorer 10+
+          scrollbarWidth: 'none',  // For Firefox
+        }}
+      >
         <div
           className="flex gap-[14px] transition-transform"
-          style={carouselStyle}
+          style={{
+            ...carouselStyle,
+            WebkitOverflowScrolling: 'touch', // Optional smooth scrolling on iOS
+          }}
         >
           {KEY_EVENTS_DETAILS.map((item) => {
             return (

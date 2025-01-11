@@ -20,6 +20,11 @@ export const Footer = () => {
     transition: 'transform 0.5s ease-in-out',
   };
 
+  const scrollbarHidingStyle = {
+    msOverflowStyle: 'none', // IE 10+
+    scrollbarWidth: 'none',  // Firefox
+  };
+
   return (
     <div className="flex flex-col gap-[30px] pt-[68px] pb-[97.89px] overflow-x-hidden">
       <div className="relative">
@@ -42,7 +47,9 @@ export const Footer = () => {
                 <Loader />
               </div>
             ) : (
-              <div className="flex overflow-x-auto gap-[10px]">
+              <div className="flex overflow-x-auto gap-[10px]"
+               style={scrollbarHidingStyle}
+              >
                 {coins?.map((coin) => {
                   const price_btc = Number(coin?.item?.data?.price_btc);
 
@@ -121,7 +128,9 @@ export const Footer = () => {
                 <Loader />
               </div>
             ) : (
-              <div className="flex overflow-x-auto gap-[10px]">
+              <div className="flex overflow-x-auto gap-[10px]"
+               style={scrollbarHidingStyle}
+              >
                 {coins?.map((coin) => {
                   const price_btc = Number(coin?.item?.data?.price_btc);
 
